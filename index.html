@@ -40,7 +40,45 @@ function prettyNumber(x){
     module = 'Parsing pretty number';
     if(typeof x !== 'number' || x === Infinity || x === -Infinity){
         return x;
+    }  var xorig = String(x);
+    if(xorig.indexOf("e+") !== -1){
+        var xexp = xorig.split("e+");
+        xexp[0] = xexp[0].split('.').join('.');
+        while(xexp[0].length <= parseInt(xexp[1])){
+            xexp[0] += "0";
+        }
+        xsplit = [xexp[0].substring(0, parseInt(xexp[1]) + 1)];
+    }else{
+        var xsplit = xorig.split('.');
     }
+    if(xsplit[0].length > 6){
+        var chosenNumber = Math.floor((xsplit[0].length - 7) / 3);
+        if(chosenNumber >= prettyNumberPhrases.length){
+            chosenNumber = prettyNumberPhrases.length - 1;
+        }
+        var xsmall = Math.round(x / prettyNumberPhrases[chosenNumber][1]) / 10;
+        return prettyNumber(xsmall) + prettyNumberPhrases[chosenNumber][0];
+    }else{
+        var xusedec = 0;
+        var xstr = xsplit[0];
+        if(xsplit.length > 1){
+            var xdec = xsplit[1];
+            xusedec = 1;
+        }
+        var xfinal = "";
+        for(var i = xstr.length; i > 0; i -= 3){
+            if(i > 3){
+                xfinal = "," + xstr.substring(i - 3, i) + xfinal;
+            }else{
+                xfinal = xstr.substring(0, i) + xfinal;
+            }
+        }
+        if(xusedec){
+            xfinal += "." + xdec;
+        }
+        return xfinal;
+    }
+}
   </script>
 </body>
 </html>
