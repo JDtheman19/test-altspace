@@ -5,14 +5,35 @@
   <script defer src="script.js"></script>
   </head> --->
 <body>
+  <h1>Cookies<p id="cookienumber">0</p></h1>
 <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/AltspaceVR/AltspaceSDK/v2.0.2/dist/altspace.min.js"></script>  
 <a-scene altspace='vertical-align: bottom;'>
 <a-assets>
   
 </a-assets>
-<a-sphere position="0 1.5 0" color="#311a08" onclick="click-cookie()">
+<a-sphere position="0 1.5 0" color="#311a08" onclick="clickcookie()">
   </a-sphere>
 </a-scene>
+  <script>
+    function getId(target){
+    return document.getElementById(target);
+}
+function getClass(target){
+    return document.getElementsByClassName(target);
+  
+var cookie = getId('cookienumber');
+  var cookies = 0;
+cookie.innerHTML = "0";
+
+function updateCookies(){
+    cookie.innerHTML = prettyNumber(cookies);
+  
+  function clickcookie(){
+    cookie++;
+    updateCookies();
+  
+  }
+  </script>
 </body>
 </html>
