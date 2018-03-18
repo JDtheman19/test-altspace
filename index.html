@@ -31,8 +31,16 @@ function updateCookies(){
   function clickcookie(){
     cookies++;
     updateCookies();
-  
   }
+    
+    module = 'Setting prettyNumber system';
+var pow = Math.pow;
+var prettyNumberPhrases = [[" Million", pow(10, 5)], [" Billion", pow(10, 8)], [" Trillion", pow(10, 11)], [" Quadrillion", pow(10, 14)], [" Quintillion", pow(10, 17)], [" Sextillion", pow(10, 20)], [" Septillion", pow(10, 23)], [" Octillion", pow(10, 26)], [" Nonillion", pow(10, 29)], [" Decillion", pow(10, 32)], [" Undecillion", pow(10, 35)], [" Unodecillion", pow(10, 38)], [" Tredecillion", pow(10, 41)], [" Quattruordecillion", pow(10, 44)],  [" Quindecillion", pow(10, 47)], [" Sexdecillion", pow(10, 50)], [" Septendecillion", pow(10, 53)], [" Octodecillion", pow(10, 56)], [" Novemdecillion", pow(10, 59)], [" Vigintillion", pow(10, 62)], ["Zillion", pow(10,65)]];
+function prettyNumber(x){
+    module = 'Parsing pretty number';
+    if(typeof x !== 'number' || x === Infinity || x === -Infinity){
+        return x;
+    }
   </script>
 </body>
 </html>
