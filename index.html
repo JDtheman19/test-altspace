@@ -456,7 +456,7 @@ var shopItems = {
     module = 'Setting function to check buyable items';
 function checkBuyable(){
     for(var i in shopItems){
-        if(cookies >= parseInt(getId(i).className("ItemPrice")[0].innerHTML)){
+        if(cookies >= parseInt(getId(i).getClass("ItemPrice")[0].innerHTML)){
             getId(i).className = getId(i).className.split(' ')[0];
         }else{
             getId(i).className = getId(i).className.split(' ')[0] + " disabled";
