@@ -11,7 +11,7 @@
         <div id="mcps"><span id="mcpsNumber">0</span> Manual Clicks per Second (MPS)</div>
  
 <a-scene altspace='vertical-align: bottom;'>
- <a-entity id="shop">
+ <a-entity id="shop" altspace='vertical-alignment:top;'>
  <div id="cookieShop"; background-color:#222">
                 <div id="cookieshopHeader">Shop</div>
             <div onclick="buyItem(this)" title="+1 CPS" class="ShopItem disabled" id="clicker">
@@ -498,7 +498,7 @@ setInterval(countCps, 1000);
   <style>
 #shop{
    position:absolute;
-   top:-250px;
+   top:0;
    height:100%;
 }
     h1 {
