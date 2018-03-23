@@ -13,19 +13,7 @@
 </a-assets>
 <a-sphere id="cookie" position="0 1.5 0" color="#311a08" onclick="clickcookie()">
   </a-sphere>
-        <div id="cookieShop" style="background:url(/win7blur1080.png);background-color:#222">
-                <div id="cookieupgradeHeader">Upgrades</div>
-            <div id="Upgrades">
-                
-                <div onclick="buyItem(this)" style="left:1px;" class="upgradeItem disabled" id='extracursor'>
-                    <div class="imgItem"><img src="cursor-aero.png"></div>
-                        <p class="NameCenter">Extra Cursor</p><p class="ItemPrice" id="">10000 Cookies</p>
-                            <div class="numberOfItems"><p class="NameCenterNum">0</p></div></div>
-                        
-                <div onclick="buyItem(this)" style="right:1px;" class="upgradeItem" id=''></div> <!-- we can reuse buyItem -->
-                <div onclick="buyItem(this)" style="top:70px;left:1px;" class="upgradeItem" id=''></div>
-                <div onclick="buyItem(this)" style="top:70px;right:1px;" class="upgradeItem" id=''></div>
-            </div>
+        <div id="cookieShop"; background-color:#222">
                 <div id="cookieshopHeader">Shop</div>
             <div onclick="buyItem(this)" title="+1 CPS" class="ShopItem disabled" id="clicker">
                 <div class="imgItem"><img src="pointer.png"></div><p class="NameCenter">Clicker</p>
@@ -474,6 +462,17 @@ window.setInterval(checkBuyable, 1000);
     h1 {
     background-color:white;
     }
+#cookieShop{
+  height:100%;
+  background-color:#606060;
+  right:250px;
+  top:0;
+  position:absolute;
+  transition:1s;
+  width:250px;
+  z-index:100;
+  overflow-y:scroll;                                                           
+}
 .ShopItem{
   width:100%;
   height:50px;
