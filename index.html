@@ -1,4 +1,4 @@
-  JDtheman19.github.io/test-altspace/index.html
+ <!-- JDtheman19.github.io/test-altspace/index.html -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +13,96 @@
 </a-assets>
 <a-sphere id="cookie" position="0 1.5 0" color="#311a08" onclick="clickcookie()">
   </a-sphere>
+        <div id="cookieShop" style="background:url(/win7blur1080.png);background-color:#222">
+                <div id="cookieupgradeHeader">Upgrades</div>
+            <div id="Upgrades">
+                
+                <div onclick="buyItem(this)" style="left:1px;" class="upgradeItem disabled" id='extracursor'>
+                    <div class="imgItem"><img src="cursor-aero.png"></div>
+                        <p class="NameCenter">Extra Cursor</p><p class="ItemPrice" id="">10000 Cookies</p>
+                            <div class="numberOfItems"><p class="NameCenterNum">0</p></div></div>
+                        
+                <div onclick="buyItem(this)" style="right:1px;" class="upgradeItem" id=''></div> <!-- we can reuse buyItem -->
+                <div onclick="buyItem(this)" style="top:70px;left:1px;" class="upgradeItem" id=''></div>
+                <div onclick="buyItem(this)" style="top:70px;right:1px;" class="upgradeItem" id=''></div>
+            </div>
+                <div id="cookieshopHeader">Shop</div>
+            <div onclick="buyItem(this)" title="+1 CPS" class="ShopItem disabled" id="clicker">
+                <div class="imgItem"><img src="pointer.png"></div><p class="NameCenter">Clicker</p>
+                <p class="ItemPrice" id="">15 Cookies</p> <!-- raise by 10 -->
+                    <div class="numberOfItems"><p class="NameCenterNum">0</p></div></div>
+                    
+            <div onclick="buyItem(this)" title="+5 CPS" class="ShopItem disabled" id="grandmom">
+                <div class="imgItem"><img style="width:40px;height:40px;padding:5px;" src="grandmom.png"></div><p class="NameCenter">Grandmom</p>
+                <p class="ItemPrice" id="">350 Cookies</p> <!-- raise 25 -->
+                    <div class="numberOfItems"><p class="NameCenterNum">0</p></div></div>
+                    
+            <div onclick="buyItem(this)" title="+15 CPS" class="ShopItem disabled" id="cookiedonation">
+                <div class="imgItem"><img src="donations.png"></div><p class="NameCenter">Donations</p>
+                <p class="ItemPrice" id="">5000 Cookies</p> <!-- raise by 75 -->
+                    <div class="numberOfItems"><p class="NameCenterNum">0</p></div></div>
+                
+            <div onclick="buyItem(this)" title="+25 CPS" class="ShopItem disabled" id="cookieseeds">
+                <div class="imgItem"><img style="width:40px;height:40px;padding:5px;"src="seeds.png"></div><p class="NameCenter">Cookie Seeds</p>
+                <p class="ItemPrice" id="">25000 Cookies</p> <!-- raise by 150 -->
+                    <div class="numberOfItems"><p class="NameCenterNum">0</p></div></div>
+                
+            <div onclick="buyItem(this)" title="+40 CPS" class="ShopItem disabled" id="cookietrees">
+                <div class="imgItem"><img style="width:40px;height:40px;padding:5px;"src="tree cookie.png"></div><p class="NameCenter">Cookie Trees</p>
+                <p class="ItemPrice" id="">155000 Cookies</p>
+                    <div class="numberOfItems"><p class="NameCenterNum">0</p></div></div>
+                    
+            <div onclick="buyItem(this)" title="+60 CPS" class="ShopItem disabled" id="cookiethief">
+                <div class="imgItem"><img style="width:35px;height:40px;padding:5px;"src="cookiethef.png"></div><p class="NameCenter">Cookie Thief</p>
+                <p class="ItemPrice" id="">200000 Cookies</p>
+                    <div class="numberOfItems"><p class="NameCenterNum">0</p></div></div>
+                    
+            <div onclick="buyItem(this)" title="+85 CPS" class="ShopItem disabled" id="cookiefactory">
+                <div class="imgItem"><img style="width:40px;height:40px;padding:5px;"src="cookiefactory.png"></div><p class="NameCenter">Cookie Factory</p>
+                <p class="ItemPrice" id="">255000 Cookies</p>
+                    <div class="numberOfItems"><p class="NameCenterNum">0</p></div></div>
+                    
+            <div onclick="buyItem(this)" title="+100 CPS" class="ShopItem disabled" id="cookieprinter">
+                <div class="imgItem"><img style="width:40px;height:40px;padding:5px;"src="printer.png"></div><p class="NameCenter">Cookie Printer</p>
+                <p class="ItemPrice" id="">500000 Cookies</p>
+                    <div class="numberOfItems"><p class="NameCenterNum">0</p></div></div>
+                    
+            <div onclick="buyItem(this)" title="+120 CPS" class="ShopItem disabled" id="cookiespaceship">
+                <div class="imgItem"><img style="width:20px;height:40px;padding:5px;"src="ship.png"></div><p class="NameCenter">Cookie Ship</p>
+                <p class="ItemPrice" id="">1055000 Cookies</p>
+                    <div class="numberOfItems"><p class="NameCenterNum">0</p></div></div>
+                    
+            <div onclick="buyItem(this)" title="+145 CPS" class="ShopItem disabled" id="cookieagents">
+                <div class="imgItem"><img style="width:50px;height:20px;padding:20px 0px 0px 0px;"src="agents.png"></div><p class="NameCenter">Cookie Agents</p>
+                <p class="ItemPrice" id="">2000000 Cookies</p>
+                    <div class="numberOfItems"><p class="NameCenterNum">0</p></div></div>
+                    
+            <div onclick="buyItem(this)" title="+152 CPS" class="ShopItem disabled" id="cookieempire">
+                <div class="imgItem"><img style="width:40px;height:40px;padding:5px;"src=""></div><p class="NameCenter">Cookie Empire</p>
+                <p class="ItemPrice" id="">2277500 Cookies</p>
+                    <div class="numberOfItems"><p class="NameCenterNum">0</p></div></div>
+                    
+            <div onclick="buyItem(this)" title="+160 CPS" class="ShopItem disabled" id="cookieplanet">
+                <div class="imgItem"><img style="width:46px;height:35px;padding:10px 2px 10px 2px;"src="cookieplanet.png"></div><p class="NameCenter">Cookie Planet</p>
+                <p class="ItemPrice" id="">2555000 Cookies</p>
+                    <div class="numberOfItems"><p class="NameCenterNum">0</p></div></div>
+                    
+            <div onclick="buyItem(this)" title="+180 CPS" class="ShopItem disabled" id="cookieplanetminers">
+                <div class="imgItem"></div><p class="NameCenter">Cookie Planet Miners</p>
+                <p class="ItemPrice" id="">3000000 Cookies</p>
+                    <div class="numberOfItems"><p class="NameCenterNum">0</p></div></div>
+                    
+            <div onclick="buyItem(this)" title="+205 CPS" class="ShopItem disabled" id="cookietimemachine">
+                <div class="imgItem"></div><p class="NameCenter">Cookie Time Machine</p>
+                <p class="ItemPrice" id="">5000000 Cookies</p>
+                    <div class="numberOfItems"><p class="NameCenterNum">0</p></div></div>
+                    
+            <div onclick="buyItem(this)" title="+220 CPS" class="ShopItem disabled" id="cookiecloner">
+                <div class="imgItem"></div><p class="NameCenter">Cookie Cloner</p>
+                <p class="ItemPrice" id="">7000000 Cookies</p>
+                    <div class="numberOfItems"><p class="NameCenterNum">0</p></div></div>
+                    
+        </div>
 </a-scene>
   <script>
     function getId(target){
@@ -80,11 +170,383 @@ function prettyNumber(x){
         return xfinal;
     }
 }
+    module = 'Initializing the Shop Items';
+var shopItems = {
+    clicker: {
+        total: 0,
+        action: function(){ // runs when user buys it
+            
+        },
+        init: function(){ // runs when the game is loading
+            
+        },
+        clickCookie: function(){ // runs every ten second, i.e. adding score and such
+            autoClick(shopItems.clicker.total);
+        },
+        startup: function(){ // runs once when game starts
+            setInterval(shopItems.clicker.clickCookie, 1000);
+        },
+        originalPrice: 15
+    },
+    grandmom: {
+        total: 0,
+        action: function(){
+            
+        },
+        init: function(){
+            
+        },
+        clickCookie: function(){
+            autoClick(5 * shopItems.grandmom.total);
+        },
+        startup: function(){
+            setInterval(shopItems.grandmom.clickCookie, 1000);
+        },
+        originalPrice: 350
+    },
+    cookiedonation: {
+        total: 0,
+        action: function(){
+            
+        },
+        init: function(){
+            
+        },
+        clickCookie: function(){
+            autoClick(15 * shopItems.cookiedonation.total);
+        },
+        startup: function(){
+            setInterval(shopItems.cookiedonation.clickCookie, 1000);
+        },
+        originalPrice: 5000
+    },
+    cookieseeds: {
+        total: 0,
+        action: function(){
+            
+        },
+        init: function(){
+            
+        },
+        clickCookie: function(){
+            autoClick(25 * shopItems.cookieseeds.total);
+        },
+        startup: function(){
+            setInterval(shopItems.cookieseeds.clickCookie, 1000);
+        },
+        originalPrice: 25000
+    },
+    cookietrees: {
+        total: 0,
+        action: function(){
+            
+        },
+        init: function(){
+            
+        },
+        clickCookie: function(){
+            autoClick(40 * shopItems.cookietrees.total);
+        },
+        startup: function(){
+            setInterval(shopItems.cookietrees.clickCookie, 1000);
+        },
+        originalPrice: 155000
+    },
+    cookiethief: {
+        total: 0,
+        action: function(){
+            
+        },
+        init: function(){
+            
+        },
+        clickCookie: function(){
+            autoClick(60 * shopItems.cookiethief.total);
+        },
+        startup: function(){
+            setInterval(shopItems.cookiethief.clickCookie, 1000);
+        },
+        originalPrice: 200000
+    },
+    cookiefactory: {
+        total: 0,
+        action: function(){
+            
+        },
+        init: function(){
+            
+        },
+        clickCookie: function(){
+            autoClick(85 * shopItems.cookiefactory.total);
+        },
+        startup: function(){
+            setInterval(shopItems.cookiefactory.clickCookie, 1000);
+        },
+        originalPrice: 255000
+    },
+    cookieprinter: {
+        total: 0,
+        action: function(){
+            
+        },
+        init: function(){
+            
+        },
+        clickCookie: function(){
+            autoClick(100 * shopItems.cookieprinter.total);
+        },
+        startup: function(){
+            setInterval(shopItems.cookieprinter.clickCookie, 1000);
+        },
+        originalPrice: 500000
+    },
+    cookiespaceship: {
+        total: 0,
+        action: function(){
+            
+        },
+        init: function(){
+            
+        },
+        clickCookie: function(){
+            autoClick(120 * shopItems.cookiespaceship.total);
+        },
+        startup: function(){
+            setInterval(shopItems.cookiespaceship.clickCookie, 1000);
+        },
+        originalPrice: 1055000
+    },
+    cookieagents: {
+        total: 0,
+        action: function(){
+            
+        },
+        init: function(){
+            
+        },
+        clickCookie: function(){
+            autoClick(145 * shopItems.cookieagents.total);
+        },
+        startup: function(){
+            setInterval(shopItems.cookieagents.clickCookie, 1000);
+        },
+        originalPrice: 2000000
+    },
+    cookieempire: {
+        total: 0,
+        action: function(){
+            
+        },
+        init: function(){
+            
+        },
+        clickCookie: function(){
+            autoClick(152 * shopItems.cookieagents.total);
+        },
+        startup: function(){
+            setInterval(shopItems.cookieempire.clickCookie, 1000);
+        },
+        originalPrice: 2277500
+    },
+    cookieplanet: {
+        total: 0,
+        action: function(){
+            
+        },
+        init: function(){
+            
+        },
+        clickCookie: function(){
+            autoClick(160 * shopItems.cookieplanet.total);
+        },
+        startup: function(){
+            setInterval(shopItems.cookieplanet.clickCookie, 1000);
+        },
+        originalPrice: 2555000
+    },
+    cookieplanetminers: {
+        total: 0,
+        action: function(){
+            
+        },
+        init: function(){
+            
+        },
+        clickCookie: function(){
+            autoClick(180 * shopItems.cookieplanetminers.total);
+        },
+        startup: function(){
+            setInterval(shopItems.cookieplanetminers.clickCookie, 1000);
+        },
+        originalPrice: 3000000
+    },
+    cookietimemachine: {
+        total: 0,
+        action: function(){
+            
+        },
+        init: function(){
+            
+        },
+        clickCookie: function(){
+            autoClick(205 * shopItems.cookietimemachine.total);
+        },
+        startup: function(){
+            setInterval(shopItems.cookietimemachine.clickCookie, 1000);
+        },
+        originalPrice: 5000000
+    },
+    cookiecloner: {
+        total: 0,
+        action: function(){
+            
+        },
+        init: function(){
+            
+        },
+        clickCookie: function(){
+            autoClick(220 * shopItems.cookiecloner.total);
+        },
+        startup: function(){
+            setInterval(shopItems.cookiecloner.clickCookie, 1000);
+        },
+        originalPrice: 7000000
+    },
+    // UPGRADES
+    extracursor: {
+        total: 0,
+        action: function(){
+            addFloatingCursor();
+        },
+        init: function(){
+            addFloatingCursor();
+        },
+        startup: function(){
+            
+        },
+        originalPrice: 10000
+    }
+};
+    function buyItem(selectedButton){
+    module = 'Buying shop item';
+    var selectedItem = selectedButton.id;
+    // alert(selectedItem);
+    if(selectedButton.getElementsByClassName('ItemPrice')[0]){
+        var hasEnoughCookie = (cookies >= parseInt(selectedButton.getElementsByClassName("ItemPrice")[0].innerHTML));
+        if(hasEnoughCookie){
+            cookies -= parseInt(selectedButton.getElementsByClassName("ItemPrice")[0].innerHTML);
+            updateCookies();
+            shopItems[selectedItem].total++;
+            selectedButton.getElementsByClassName('NameCenterNum').innerHTML = shopItems[selectedItem].total;
+            //try{
+            shopItems[selectedItem].action();
+            //}catch(err){
+            //    alert("There was an error processing the item. Here's your money back!\n\n\nHey, nerds!\n" + err);
+            //    cookie.innerHTML += parseInt(selectedButton.getElementsByClassName("itemPrice")[0].innerHTML);
+            //}
+            // show the total number of selected item in shop
+            selectedButton.getElementsByClassName('NameCenterNum')[0].innerHTML = shopItems[selectedItem].total;
+            // save the shopItems object in localStorage
+            saveShopItems();
+            selectedButton.getElementsByClassName("ItemPrice")[0].innerHTML = parseInt(selectedButton.getElementsByClassName("ItemPrice")[0].innerHTML) + Math.round(Math.sqrt(shopItems[selectedItem].originalPrice) * shopItems[selectedItem].total) + " Cookies"
+            // check buyable
+            window.localStorage.setItem("numberOfGalletas", cookies);
+            checkBuyable();
+        }else{
+            alert("You don't has enough cookies for this item!");
+        }
+    }
+}
+    module = 'Setting function to check buyable items';
+function checkBuyable(){
+    for(var i in shopItems){
+        if(cookies >= parseInt(getId(i).getElementsByClassName("ItemPrice")[0].innerHTML)){
+            getId(i).className = getId(i).className.split(' ')[0];
+        }else{
+            getId(i).className = getId(i).className.split(' ')[0] + " disabled";
+        }
+    }
+}
+window.setInterval(checkBuyable, 1000);
+    
   </script>
   <style>
     h1 {
     background-color:white;
     }
+.ShopItem{
+  width:100%;
+  height:50px;
+  font-size:15px;
+  text-align:center;
+  border:2px solid #000;
+  border-top:0px;
+  border-left:0px;
+  border-right:0px;
+  background:rgba(0, 0, 0, 0.25);
+}
+.ShopItem .imgItem{
+  position:absolute;
+  margin:0;
+  z-index:150;
+  left:0px;
+  width:50px;
+  height:50px;
+  border:2px solid #000;
+  border-bottom:0px;
+  border-top:0px;
+}
+.ShopItem .NameCenter{
+  position:absolute;
+  margin:0;
+  right:0;
+  left:0;
+  padding-left:55px;
+  padding-right:55px; 
+  /*padding-top:15px;*/
+}
+.ShopItem .numberOfItems{
+  position:absolute;
+  margin:0;
+  z-index:150;
+  right:0px;
+  width:50px;
+  height:50px;
+  border:2px solid #000;
+  border-bottom:0px;
+  border-top:0px;
+}
+.ShopItem .NameCenterNum{
+  padding:absolute;
+  margin:0;
+  padding-top:15px;
+  z-index: 150;
+}
+.ShopItem .ItemPrice{
+  position:absolute;
+  font-size:10px;
+  right:0;
+  left:0;
+  margin:0;
+  padding-top:35px;
+  padding-right:50px;
+  padding-left:50px;
+  text-shadow:0 0 1px #000;
+}
+
+#effects{
+  position:absolute;
+  width:360px;
+  height:360px;
+  left:0;
+  top:0;
+  pointer-events: none;
+}
+
+.disabled{
+  opacity:0.5;
+  pointer-events:none;
+}
     </style>
 </body>
 </html>
