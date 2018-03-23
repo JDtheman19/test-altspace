@@ -461,7 +461,16 @@ function checkBuyable(){
     }
 }
 window.setInterval(checkBuyable, 1000);
-    
+                                                                               
+    module = 'Initializing shop functions';
+function saveShopItems(){
+    module = 'Saving the shop items'
+    var shopSave = {};
+    for(var i in shopItems){
+        shopSave[i] = shopItems[i];
+    }
+    window.localStorage.setItem('shopItems', JSON.stringify(shopSave));
+}
   </script>
   <style>
     h1 {
