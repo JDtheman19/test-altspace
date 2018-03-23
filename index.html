@@ -7,6 +7,8 @@
   </head> 
 <body>
   <h1>Cookies <span id="cookieNumber">0</span></h1>
+ <div id="cps"><span id="cpsNumber">0</span> Automatic Clicks per Second (CPS)</div>
+        <div id="mcps"><span id="mcpsNumber">0</span> Manual Clicks per Second (MPS)</div>
  <div id="cookieShop"; background-color:#222">
                 <div id="cookieshopHeader">Shop</div>
             <div onclick="buyItem(this)" title="+1 CPS" class="ShopItem disabled" id="clicker">
@@ -115,6 +117,7 @@ function updateCookies(){
    function autoClick(numberOfClicks){
     cookies += numberOfClicks;
     updateCookies();
+    window.localStorage.setItem("numberOfGalletas", cookies);
     }
                      
     module = 'Setting prettyNumber system';
@@ -471,6 +474,26 @@ function saveShopItems(){
     }
     window.localStorage.setItem('shopItems', JSON.stringify(shopSave));
 }
+  module = 'Initializing CPS';
+var cps = 0;
+var mcps = 0;
+var suspectCheating = 0;
+var lastCookies = 0;
+function countCps(){
+    getId("cpsNumber").innerHTML = prettyNumber(cps);
+    getId("mcpsNumber").innerHTML = mcps;
+    if((cookies - lastCookies > cps + mcps || mcps > 30) && !suspectCheating){
+        suspectCheating = 1;
+        getId("counter").innerHTML += "*";
+        getId("mcps").innerHTML += '<br><i>* Totally Legit</i>';
+        cookie = getId("cookieNumber");
+        window.localStorage.setItem("cheater", "true");
+    }
+    cps = 0;
+    mcps = 0;
+    lastCookies = cookies;
+}
+setInterval(countCps, 1000);
   </script>
   <style>
     h1 {
