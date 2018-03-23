@@ -431,7 +431,7 @@ var shopItems = {
     function buyItem(selectedButton){
     module = 'Buying shop item';
     var selectedItem = selectedButton.id;
-    // alert(selectedItem);
+    //alert(selectedItem);
     if(selectedButton.getElementsByClassName('ItemPrice')[0]){
         var hasEnoughCookie = (cookies >= parseInt(selectedButton.getElementsByClassName("ItemPrice")[0].innerHTML));
         if(hasEnoughCookie){
@@ -439,13 +439,7 @@ var shopItems = {
             updateCookies();
             shopItems[selectedItem].total++;
             selectedButton.getElementsByClassName('NameCenterNum').innerHTML = shopItems[selectedItem].total;
-            //try{
             shopItems[selectedItem].action();
-            //}catch(err){
-            //    alert("There was an error processing the item. Here's your money back!\n\n\nHey, nerds!\n" + err);
-            //    cookie.innerHTML += parseInt(selectedButton.getElementsByClassName("itemPrice")[0].innerHTML);
-            //}
-            // show the total number of selected item in shop
             selectedButton.getElementsByClassName('NameCenterNum')[0].innerHTML = shopItems[selectedItem].total;
             // save the shopItems object in localStorage
             saveShopItems();
@@ -461,7 +455,7 @@ var shopItems = {
     module = 'Setting function to check buyable items';
 function checkBuyable(){
     for(var i in shopItems){
-        if(cookies >= parseInt(getId(i).getElementsByClassName("ItemPrice")[0].innerHTML)){
+        if(cookies >= parseInt(getId(i).className("ItemPrice")[0].innerHTML)){
             getId(i).className = getId(i).className.split(' ')[0];
         }else{
             getId(i).className = getId(i).className.split(' ')[0] + " disabled";
