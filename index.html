@@ -92,10 +92,9 @@
         </div>
  </a-entity>
 <a-assets>
-  <a-asset-item id="cookie-obj" src="/3D-obj/Cookie-obj.obj"></a-asset-item>
-    <a-asset-item id="cookie-mtl" src="/3D-obj/Cookie-obj.mtl"></a-asset-item>
+
 </a-assets>
-        <a-entity id="cookie" position="-1.5 1.5 0" onclick="clickcookie()" obj-model="obj: #cookie-obj; mtl: #cookie-mtl"></a-entity>
+        <a-obj-model id="cookie" position="-1.5 1.5 0" onclick="clickcookie()" src 3D-obj/Cookie-obj.obj" mtl="3D-obj/Cookie-obj.mtl"></a-obj-model>
 </a-scene>
   <script>
     function getId(target){
