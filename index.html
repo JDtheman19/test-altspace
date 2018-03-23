@@ -94,7 +94,12 @@
 <a-assets>
 
 </a-assets>
-        <a-obj-model id="cookie" position="-1.5 1.5 0" onclick="clickcookie()" src="oreo/OREO.obj" mtl="oreo/OREO.mtl"></a-obj-model>
+        <a-obj-model id="cookie" rotation="0 90 0" position="-1.5 1.5 0" onclick="clickcookie()" src="oreo/OREO.obj" mtl="oreo/OREO.mtl"> 
+        <a-animation attribute="rotation"
+               dur="10000"
+               fill="forwards"
+               to="360 0 0"
+               repeat="indefinite"></a-animation></a-obj-model>
 </a-scene>
   <script>
     function getId(target){
@@ -495,8 +500,8 @@ setInterval(countCps, 1000);
   </script>
   <style>
  #cookie{
-   width:250px;
-   height:250px;
+   width:750px;
+   height:750px;
  }
     h1 {
     background-color:white;
