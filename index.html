@@ -13,13 +13,14 @@
 <a-scene altspace='vertical-align: bottom;'>
  <a-entity id="shop" altspace='vertical-alignment:top;'>
 
-  <a-plane>
+  <a-plane onclick="buyItem(this)" class="ShopItem disabled" id="clicker">
+  </a-plane>
   
   <!--- <div id="cookieShop"; background-color:#222">
                 <div id="cookieshopHeader">Shop</div>
             <a-plane onclick="buyItem(this)" title="+1 CPS" class="ShopItem disabled" id="clicker">
                 <div class="imgItem"><img src="shopitems/pointer.png"></div><p class="NameCenter">Clicker</p>
-                <p class="ItemPrice" id="">15 Cookies</p> <!--
+                <p class="ItemPrice" id="">15 Cookies</p>
                     <div class="numberOfItems"><p class="NameCenterNum">0</p></div></a-plane>
                     
             <a-plane onclick="buyItem(this)" title="+5 CPS" class="ShopItem disabled" id="grandmom">
@@ -502,6 +503,7 @@ setInterval(countCps, 1000);
    height:750px;
  }
 a-plane{
+ background-color:white;
    height:50px;
     }
     h1 {
