@@ -6,7 +6,7 @@
 <script src="https://cdn.rawgit.com/AltspaceVR/AltspaceSDK/v2.0.2/dist/altspace.min.js"></script>  
   </head> 
 <body>
-  <h1>Cookies<p id="cookienumber">0</p></h1>
+  <h1>Cookies<span id="cookieNumber">0</span></h1>
 <a-scene altspace='vertical-align: bottom;'>
 <a-assets>
   
@@ -22,7 +22,7 @@ function getClass(target){
     return document.getElementsByClassName(target);
 }
     
-var cookies = getId('cookienumber');
+var cookies = getId('cookieNumber');
   var cookies = 0;
 cookies.innerHTML = "0";
 
