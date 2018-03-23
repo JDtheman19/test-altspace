@@ -22,14 +22,14 @@ function getClass(target){
     return document.getElementsByClassName(target);
 }
     
-var cookies = getId('cookieNumber');
+var cookie = getId('cookieNumber');
   var cookies = 0;
-cookies.innerHTML = "0";
+cookie.innerHTML = "0";
 
 function updateCookies(){
-    cookies.innerHTML = prettyNumber(cookies);
+    cookie.innerHTML = prettyNumber(cookies);
 }
-  function clickcookie(){
+  function clickcookie(event){
     cookies++;
     updateCookies();
   }
