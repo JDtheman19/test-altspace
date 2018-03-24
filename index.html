@@ -12,14 +12,7 @@
  
 <a-scene altspace='vertical-align: bottom;'>
  <a-entity id="shop" altspace='vertical-alignment:top;'>
-
-  <a-plane position="0 1 0" onclick="buyItem(this)" class="ShopItem disabled" id="clicker"> <entity>
-   <div class="imgItem"><img src="shopitems/pointer.png"></div><p class="NameCenter">Clicker</p>
-   <p class="ItemPrice" id="">15 Cookies</p>
-   <div class="numberOfItems"><p class="NameCenterNum">0</p></div></entity>
-  </a-plane>
-  
-  <!--- <div id="cookieShop"; background-color:#222">
+  <div id="cookieShop"; background-color:#222">
                 <div id="cookieshopHeader">Shop</div>
             <a-plane onclick="buyItem(this)" title="+1 CPS" class="ShopItem disabled" id="clicker">
                 <div class="imgItem"><img src="shopitems/pointer.png"></div><p class="NameCenter">Clicker</p>
@@ -501,11 +494,6 @@ function countCps(){
 setInterval(countCps, 1000);
   </script>
   <style>
-   #clicker{
-   position:absolute;
-   right:0;
-   top:0
-   }
  #cookie{
    width:750px;
    height:750px;
@@ -529,6 +517,7 @@ a-plane{
   overflow-y:scroll;                                                           
 }
 .ShopItem{
+  position:absolute;
   width:100%;
   height:50px;
   font-size:15px;
@@ -540,6 +529,7 @@ a-plane{
   background:rgba(0, 0, 0, 0.25);
 }
 .ShopItem .imgItem{
+  position:absolute;
   margin:0;
   z-index:150;
   left:0px;
@@ -550,6 +540,7 @@ a-plane{
   border-top:0px;
 }
 .ShopItem .NameCenter{
+  position:absolute;                                                   
   margin:0;
   right:0;
   left:0;
@@ -558,6 +549,7 @@ a-plane{
   /*padding-top:15px;*/
 }
 .ShopItem .numberOfItems{
+  position:absolute;                                                   
   margin:0;
   z-index:150;
   right:0px;
@@ -574,6 +566,7 @@ a-plane{
   z-index: 150;
 }
 .ShopItem .ItemPrice{
+  position:absolute;                                                   
   font-size:10px;
   right:0;
   left:0;
